@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Hello wasm-pack!</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Compute matrix product</title>
   </head>
   <body>
-    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <div class="wrapper">
+      <div class="left-b"></div>
+      <table id="mat-a"><tbody></tbody></table>
+      <div class="right-b"></div>
+      <div class="left-b"></div>
+      <table id="mat-b"><tbody></tbody></table>
+      <div class="right-b"></div>
+      <div style="display: flex;flex-direction: column;justify-content: center;">
+        <div> = </div>
+      </div>
+      <div class="left-b"></div>
+      <table id="mat-c"><tbody></tbody></table>
+      <div class="right-b"></div>
+    </div>
+    <br />
+    di: <input id="di" class="config" type="number" value="2" /><br />
+    dk: <input id="dk" class="config" type="number" value="3" /><br />
+    dj: <input id="dj" class="config" type="number" value="2" /><br />
     <script src="./bootstrap.js"></script>
   </body>
 </html>

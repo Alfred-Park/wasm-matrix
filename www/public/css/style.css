@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper > * {
+    margin: 5px;
+}
+
+input.mat-inp {
+    border: none;
+    width: 30px;
+    text-align: center;
+}
+
+.left-b, .right-b {
+    border: black solid 2px;
+    width: 3px;
+}
+
+.left-b {
+    border-right: none;
+}
+
+.right-b {
+    border-left: none;
+}
